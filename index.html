@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Rintero</title>
+    <link
+      rel="shortcut icon"
+      href="assets/residential.png"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,18 +48,20 @@
     </script>
   </head>
 
-  <body class="font-manrope ">
+  <body class="font-manrope">
     <!-- ---header-- -->
-    <header class="w-full bg-gradient-to-b from-[rgb(220,220,220)] to-[rgba(255,255,255,0)]">
-      <div class="hero container mx-auto border ">
+    <header
+      class="w-full bg-gradient-to-b from-[rgb(220,220,220)] to-[rgba(255,255,255,0)]"
+    >
+      <div class="hero container mx-auto lg:px-12 xl:px-32">
         <!-- navbar -->
-        <div class="navbar ">
+        <div class="navbar">
           <div class="navbar-start">
-            
-
-            <a class="btn-ghost font-extrabold text-3xl flex gap-1 rounded-[32px] p-2 hover:bg-lime-300">
-              <div class="rounded-full bg-primary px-1">
-                <i class="-rotate-45 fa-solid fa-arrow-right "></i>
+            <a
+              class="btn-ghost font-extrabold text-3xl flex gap-1 rounded-[32px] p-2 hover:bg-lime-300"
+            >
+              <div id="icon" class="rounded-full bg-primary px-1">
+                <i class="-rotate-45 fa-solid fa-arrow-right"></i>
               </div>
               Rinterio</a
             >
@@ -68,28 +75,45 @@
               <li><a>Contact Us</a></li>
             </ul>
           </div>
-          <div class="navbar-end gap-4 hidden lg:flex">
 
+          <div class="navbar-end gap-4 hidden lg:flex">
             <div class="rounded-full bg-white px-1">
-                <i class="fa-solid px-1 py-2 fa-magnifying-glass"></i>
+              <i
+                class="lg:hidden xl:flex fa-solid px-1 py-2 fa-magnifying-glass"
+              ></i>
             </div>
-            <div class="rounded-full bg-white px-1 py-1">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                  </svg>
-                  
+            <div class="rounded-full bg-white px-1 py-1 lg:hidden 2xl:flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
             </div>
-            
-            <a class="btn text-black text-xl font-extrabold rounded-[32px] bg-primary border-none hover:bg-lime-300">Book Consult <div class="rounded-full text-xl bg-black  px-1">
-                <i class="-rotate-45 fa-solid fa-arrow-right text-white "></i>
-              </div></a>
+
+            <a
+              class="btn text-black text-xl font-extrabold rounded-[32px] bg-primary border-none hover:bg-lime-300"
+              >Book Consult
+              <div class="rounded-full text-xl bg-black px-1">
+                <i
+                  class="-rotate-45 fa-solid fa-arrow-right text-white"
+                ></i></div
+            ></a>
           </div>
-          <div class="dropdown navbar-end  text-right ">
-            <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden">
-                <div class="rounded-full bg-white px-2 py-1 text-xl">
-                    <i class="fa-solid fa-bars"></i>
-                      
-                </div>
+          <!-- ---bar--- -->
+          <div class="dropdown navbar-end text-right lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost">
+              <div class="rounded-full bg-white px-2 py-1 text-xl">
+                <i class="fa-solid fa-bars"></i>
+              </div>
             </div>
             <ul
               tabindex="0"
@@ -104,9 +128,81 @@
           </div>
         </div>
       </div>
+
+      <!-- banner -->
+      <div class="hero container mx-auto lg:px-12 xl:px-32">
+        <!-- ----banner--- -->
+        <div class="border border-red-600 pb-12">
+          <div class="banner-img flex justify-center">
+            <img src="assets/banner.png" alt="" />
+          </div>
+          <div class="banner-info flex flex-col gap-y-4 items-center">
+            <h1
+              class="text-black text-center leading-[87px] font-extrabold text-[64px]"
+            >
+              A barn house of this design has a striking appearance
+            </h1>
+            <p class="text-base text-center font-medium max-w-4xl">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents, and large windows that flood the space with natural
+              light.
+            </p>
+            <div>
+              <a
+                class="btn text-black text-xl font-extrabold rounded-[32px] bg-lime-300 border-none hover:bg-lime-200"
+                >View Details
+                <div class="rounded-full text-xl bg-primary px-1">
+                  <i class="-rotate-45 fa-solid fa-arrow-right"></i></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main></main>
+    <main class="container mx-auto">
+      <!-- --design section-- -->
+
+      <section class="bg-[rgb(244,244,244)] mt-16">
+        <div class="lg:px-12 xl:px-32 flex gap-6">
+          <div class="flex-1">
+            <button class="text-base font-bold bg-white rounded-2xl px-2 py-2">
+              <i class="fa-solid fa-arrow-right"></i> About us
+            </button>
+            <h1 class="text-[40px] font-extrabold leading-[55px] max-w-[477px]">
+              We design thoughtful, liveable spaces
+            </h1>
+            <p class="font-medium text-[rgb(73,73,73)]">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            <div class="bg-white flex gap-6 items-center p-6 rounded-2xl">
+                <div>
+                    <img src="assets/commercial.png" alt="">
+                </div>
+                <div class="max-w-[308px] space-y-2">
+                    <h3 class="text-[20px] text-[rgb(73,73,73)] font-extrabold">Commercial</h3>
+                    <p class="font-medium text-[rgb(115,115,115)]">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+            </div>
+            <div class="bg-white flex gap-6 items-center p-6 rounded-2xl">
+                <div>
+                    <img src="assets/residential.png" alt="">
+                </div>
+                <div class="max-w-[308px] space-y-2">
+                    <h3 class="text-[20px] text-[rgb(73,73,73)] font-extrabold">Commercial</h3>
+                    <p class="font-medium text-[rgb(115,115,115)]">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+            </div>
+          </div>
+          <div class="flex-1">
+            <img src="assets/Rectangle.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer></footer>
   </body>
