@@ -48,12 +48,12 @@
     </script>
   </head>
 
-  <body class="font-manrope">
+  <body class="font-manrope ">
     <!-- ---header-- -->
     <header
       class="w-full bg-gradient-to-b from-[rgb(220,220,220)] to-[rgba(255,255,255,0)]"
     >
-      <div class="hero container mx-auto lg:px-12 xl:px-32">
+      <div class="hero container mx-auto  lg:px-12 xl:px-32">
         <!-- navbar -->
         <div class="navbar">
           <div class="navbar-start">
@@ -130,15 +130,15 @@
       </div>
 
       <!-- banner -->
-      <div class="hero container mx-auto lg:px-12 xl:px-32">
+      <div class="hero container mx-auto p-6 lg:px-12 xl:px-32">
         <!-- ----banner--- -->
-        <div class="border border-red-600 pb-12">
+        <div class=" pb-6">
           <div class="banner-img flex justify-center">
             <img src="assets/banner.png" alt="" />
           </div>
           <div class="banner-info flex flex-col gap-y-4 items-center">
             <h1
-              class="text-black text-center leading-[87px] font-extrabold text-[64px]"
+              class="text-[rgb(33,33,33)] text-center text-3xl lg:leading-[87px] font-extrabold lg:text-[64px]"
             >
               A barn house of this design has a striking appearance
             </h1>
@@ -148,12 +148,13 @@
               accents, and large windows that flood the space with natural
               light.
             </p>
-            <div>
+            <div class="">
               <a
-                class="btn text-black text-xl font-extrabold rounded-[32px] bg-lime-300 border-none hover:bg-lime-200"
+                class="btn lg:px-0 px-[100px]  text-black text-xl font-extrabold rounded-[32px] bg-lime-300 border-none hover:bg-lime-200"
                 >View Details
                 <div class="rounded-full text-xl bg-primary px-1">
-                  <i class="-rotate-45 fa-solid fa-arrow-right"></i></div
+                  <i class="-rotate-45 fa-solid fa-arrow-right"></i>
+                </div
               ></a>
             </div>
           </div>
@@ -165,20 +166,23 @@
       <!-- --design section-- -->
 
       <section class="bg-[rgb(244,244,244)] mt-16">
-        <div class="lg:px-12 xl:px-32 flex gap-6">
-          <div class="flex-1">
-            <button class="text-base font-bold bg-white rounded-2xl px-2 py-2">
+        <div class="lg:px-12 xl:px-32 p-6 lg:py-12 xl:py-32 flex flex-col lg:flex-row justify-between gap-6">
+          <div class="flex flex-col flex-1 items-center lg:items-start justify-between relative gap-6 ">
+            <div class="hidden lg:block absolute -top-12 -left-4">
+                <img src="assets/Vector.png" alt="">
+            </div>
+            <button class=" w-[127px] text-base font-bold bg-white rounded-2xl px-2 py-2">
               <i class="fa-solid fa-arrow-right"></i> About us
             </button>
-            <h1 class="text-[40px] font-extrabold leading-[55px] max-w-[477px]">
+            <h1 class="text-center lg:text-left text-[40px] font-extrabold leading-[55px] max-w-[477px]">
               We design thoughtful, liveable spaces
             </h1>
-            <p class="font-medium text-[rgb(73,73,73)]">
+            <p class="text-center lg:text-left font-medium text-[rgb(73,73,73)]">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents.
             </p>
-            <div class="bg-white flex gap-6 items-center p-6 rounded-2xl">
+            <div class="bg-white flex gap-6 lg:items-center p-6 rounded-2xl">
                 <div>
                     <img src="assets/commercial.png" alt="">
                 </div>
@@ -187,18 +191,18 @@
                     <p class="font-medium text-[rgb(115,115,115)]">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
             </div>
-            <div class="bg-white flex gap-6 items-center p-6 rounded-2xl">
+            <div class="bg-white flex gap-6 lg:items-center p-6 rounded-2xl">
                 <div>
                     <img src="assets/residential.png" alt="">
                 </div>
                 <div class="max-w-[308px] space-y-2">
-                    <h3 class="text-[20px] text-[rgb(73,73,73)] font-extrabold">Commercial</h3>
+                    <h3 class="text-[20px] text-[rgb(73,73,73)] font-extrabold">Residential</h3>
                     <p class="font-medium text-[rgb(115,115,115)]">The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
             </div>
           </div>
-          <div class="flex-1">
-            <img src="assets/Rectangle.png" alt="" />
+          <div class="flex-1  flex items-center justify-center">
+            <img class="" src="assets/Rectangle.png" alt="" />
           </div>
         </div>
       </section>
