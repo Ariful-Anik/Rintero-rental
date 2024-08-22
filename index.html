@@ -16,11 +16,15 @@
       rel="stylesheet"
     />
 
-    <!-- <style>
-        .font-manrope{
-            font-family: "Manrope", sans-serif;
-        }
-    </style> -->
+    <style>
+      .bg-img {
+        background-image: url("assets/bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 16px;
+      }
+    </style>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -161,7 +165,7 @@
       </div>
     </header>
 
-    <main class="container mx-auto bg-[rgb(244,244,244)] text-[rgb(30,30,30)]">
+    <main class="container mx-auto text-[rgb(30,30,30)]">
       <!-- --design section-- -->
 
       <section class="bg-[rgb(244,244,244)] mt-16">
@@ -340,7 +344,7 @@
                   />
                 </div>
                 <div
-                  class="flex flex-col space-y-4 lg:space-y-0 p-6 justify-between  "
+                  class="flex flex-col space-y-4 lg:space-y-0 p-6 justify-between"
                 >
                   <h2 class="card-title">Commercial</h2>
                   <p class="text-[rgb(115,115,115)]">
@@ -371,7 +375,9 @@
             </div>
             <!-- 2nd grid -->
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
-              <div class="bg-white flex justify-center shadow-md rounded-2xl p-6">
+              <div
+                class="bg-white flex justify-center shadow-md rounded-2xl p-6"
+              >
                 <img
                   class="w-full h-[180px] border border-dashed border-gray-300"
                   src="assets/img3.png"
@@ -407,7 +413,9 @@
                   </div>
                 </div>
               </div>
-              <div class="bg-white flex justify-center shadow-md rounded-2xl p-6">
+              <div
+                class="bg-white flex justify-center shadow-md rounded-2xl p-6"
+              >
                 <img
                   class="w-full h-[180px] border border-dashed border-gray-300"
                   src="assets/img5.png"
@@ -418,8 +426,118 @@
           </div>
         </div>
       </section>
+
+      <!-- -------discuss section----- -->
+
+      <section class="mt-16 pb-12 bg-img">
+        <div class="lg:px-12 xl:px-32 px-6">
+          <!-- ---info-- -->
+          <div
+            class="discuss-info flex flex-col items-center pt-6 gap-2 lg:gap-5"
+          >
+            <button
+              class="bg-lime-100 hover:bg-lime-200 text-base font-bold rounded-2xl px-6 py-2"
+            >
+              <i class="fa-solid fa-arrow-right"></i>Let’s Connect
+            </button>
+            <h1
+              class="text-center text-[rgb(33,33,33)] lg:text-left text-2xl lg:text-[40px] font-extrabold leading-[55px]"
+            >
+              Let’s Discuss Next Project
+            </h1>
+            <p class="text-center max-w-2xl font-medium text-[rgb(73,73,73)]">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+
+          <div class="mt-12">
+            <form class="grid grid-cols-1 lg:grid-cols-2 gap-6" action="">
+              <input
+                class="p-6 rounded-full"
+                type="text"
+                name=""
+                id=""
+                placeholder="First Name*"
+              />
+              <input
+                class="p-6 rounded-full"
+                type="text"
+                name=""
+                id=""
+                placeholder="Last Name*"
+              />
+              <input
+                class="p-6 rounded-full"
+                type="text"
+                name=""
+                id=""
+                placeholder="Phone Number*"
+              />
+              <input
+                class="p-6 rounded-full"
+                type="text"
+                name=""
+                id=""
+                placeholder="Email ID*"
+              />
+              <textarea
+                class="p-6 lg:col-span-2 rounded-3xl"
+                name=""
+                id=""
+                rows="10"
+                placeholder="Write your message here"
+              ></textarea>
+              <a
+                class="btn lg:col-span-2 text-black text-xl font-extrabold rounded-[32px] bg-primary border-none hover:bg-lime-300"
+                >Send Mail
+                <div class="rounded-full text-xl bg-black px-1">
+                  <i
+                    class="-rotate-45 fa-solid fa-arrow-right text-white"
+                  ></i></div
+              ></a>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer class="w-full bg-[rgb(28,28,28)] h-64">
+      <div class="hero container mx-auto px-6 lg:px-12 xl:px-32 py-6 lg:py-16 flex flex-col">
+        
+        <div>
+          <a
+          class="btn-ghost  font-extrabold text-3xl flex gap-2 rounded-[32px] p-2 hover:bg-lime-300"
+        >
+          <div id="icon" class="rounded-full bg-primary px-1">
+            <i class="-rotate-45 fa-solid fa-arrow-right"></i>
+          </div>
+          <span class="text-white">Rinterio</span></a
+        >
+        </div>
+        <p class="text-[rgb(115,115,115)] font-medium text-base max-w-3xl text-center">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+        <div>
+          <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div>
+          <a
+          class="btn text-black text-xl font-extrabold rounded-[32px] bg-primary border-none hover:bg-lime-300"
+          >Book Consult
+          <div class="rounded-full text-xl bg-black px-1">
+            <i class="-rotate-45 fa-solid fa-arrow-right text-white"></i></div
+        ></a>
+        </div>
+       
+      </div>
+    </footer>
   </body>
 </html>
